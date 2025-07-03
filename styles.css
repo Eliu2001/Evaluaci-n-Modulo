@@ -106,3 +106,75 @@ h1, .hero-section h1, .hero-section p {
   background-color: var(--color-fondo);
   color: var(--color-texto);
 }
+
+.list-group-item {
+  background: transparent !important;
+  color: var(--color-texto) !important;
+  border: none !important;
+  font-size: 1.1rem;
+}
+.text-accent {
+  color: var(--color-boton);
+  font-size: 1.3em;
+  margin-right: 0.5em;
+}
+
+/* Formulario de contacto */
+#contactForm {
+  background: var(--color-fondo);
+  border: 2px solid var(--color-boton);
+}
+#contactForm label {
+  color: var(--color-boton);
+}
+#contactForm .form-control {
+  background: var(--color-fondo);
+  color: var(--color-texto);
+  border: 1px solid var(--color-boton);
+}
+#contactForm .form-control:focus {
+  border-color: var(--color-hover);
+  box-shadow: 0 0 0 0.2rem var(--color-hover);
+  background: var(--color-fondo);
+  color: var(--color-texto);
+}
+#contactForm .btn {
+  background: var(--color-boton);
+  color: var(--color-fondo);
+}
+#contactForm .btn:hover {
+  background: var(--color-hover);
+  color: var(--color-texto);
+}
+
+/* Modal test de seguridad */
+#testModal .modal-content {
+  background: var(--color-fondo);
+  color: var(--color-texto);
+  border: 2px solid var(--color-boton);
+}
+#testModal .modal-title {
+  color: var(--color-boton);
+}
+#testModal .form-label {
+  color: var(--color-boton);
+}
+#testModal .form-select {
+  background: var(--color-fondo);
+  color: var(--color-texto);
+  border: 1px solid var(--color-boton);
+}
+#testModal .form-select:focus {
+  border-color: var(--color-hover);
+  box-shadow: 0 0 0 0.2rem var(--color-hover);
+  background: var(--color-fondo);
+  color: var(--color-texto);
+}
+#testModal .btn {
+  background: var(--color-boton);
+  color: var(--color-fondo);
+}
+#testModal .btn:hover {
+  background: var(--color-hover);
+  color: var(--color-texto);
+}
