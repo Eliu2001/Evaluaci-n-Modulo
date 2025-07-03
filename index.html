@@ -11,9 +11,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"
         defer></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libertinus+Mono&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libertinus+Mono&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -41,6 +43,115 @@
             </div>
         </nav>
     </header>
+    <section class="hero-section d-flex align-items-center justify-content-center flex-column text-center py-5 ">
+        <img src="/img/hacker.png"
+            alt="Ciberseguridad" class="img-fluid rounded shadow mb-4 hero-img" style="max-width: 500px;">
+        <h1 class="display-4 fs-1 fw-bolder">¡Protege tu mundo digital y toda tu información!</h1>
+        <p class="lead">En CiberShield te enseñamos cómo.</p>
+    </section>
+    <div class="container my-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <div class="col">
+                <div class="card custom-card h-100 text-center shadow">
+                    <img src="/img/phishing.png" class="card-img-top mx-auto mt-3"
+                        alt="Phishing" style="width: 80px; height: 80px; object-fit: contain;">
+                    <div class="card-body">
+                        <h5 class="card-title">Phishing</h5>
+                        <p class="card-text">El phishing es un tipo de ataque en el que los ciberdelincuentes intentan
+                            engañarte para que reveles información personal, como contraseñas o datos bancarios, haciéndose
+                            pasar por entidades confiables.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card custom-card h-100 text-center shadow">
+                    <img src="/img/ransomware.png" class="card-img-top mx-auto mt-3"
+                        alt="Ransomware" style="width: 80px; height: 80px; object-fit: contain;">
+                    <div class="card-body">
+                        <h5 class="card-title">Ransomware</h5>
+                        <p class="card-text">El ransomware es un software malicioso que bloquea el acceso a tus archivos o
+                            sistema y exige un rescate para restaurarlo. Es una de las amenazas más graves para usuarios y
+                            empresas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card custom-card h-100 text-center shadow">
+                    <img src="/img/malware.jpg" class="card-img-top mx-auto mt-3"
+                        alt="Malware" style="width: 80px; height: 80px; object-fit: contain;">
+                    <div class="card-body">
+                        <h5 class="card-title">Malware</h5>
+                        <p class="card-text">El malware es cualquier tipo de software diseñado para dañar, robar
+                            información o acceder sin permiso a un sistema. Incluye virus, troyanos, spyware y más.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card custom-card h-100 text-center shadow">
+                    <img src="/img/ddos.jpg" class="card-img-top mx-auto mt-3"
+                        alt="Ataques DDoS" style="width: 80px; height: 80px; object-fit: contain;">
+                    <div class="card-body">
+                        <h5 class="card-title">Ataques DDoS</h5>
+                        <p class="card-text">Un ataque DDoS (Denegación de Servicio Distribuida) busca saturar un servidor o
+                            red con tráfico masivo, impidiendo el acceso legítimo a los servicios en línea.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5">
+        <h2 class="mb-4 text-center">Casos reales de ciberataques</h2>
+        <div class="accordion" id="casosRealesAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingPhishing">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePhishing" aria-expanded="true" aria-controls="collapsePhishing">
+                        Phishing
+                    </button>
+                </h2>
+                <div id="collapsePhishing" class="accordion-collapse collapse show" aria-labelledby="headingPhishing" data-bs-parent="#casosRealesAccordion">
+                    <div class="accordion-body">
+                        <strong>Ejemplo:</strong> En 2020, miles de usuarios recibieron correos falsos de bancos solicitando actualizar sus datos. Al hacer clic en el enlace, eran dirigidos a una web falsa donde robaban sus credenciales.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingRansomware">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRansomware" aria-expanded="false" aria-controls="collapseRansomware">
+                        Ransomware
+                    </button>
+                </h2>
+                <div id="collapseRansomware" class="accordion-collapse collapse" aria-labelledby="headingRansomware" data-bs-parent="#casosRealesAccordion">
+                    <div class="accordion-body">
+                        <strong>Ejemplo:</strong> El ataque WannaCry en 2017 afectó a hospitales y empresas de todo el mundo, cifrando archivos y exigiendo un rescate en bitcoins para recuperarlos.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingMalware">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMalware" aria-expanded="false" aria-controls="collapseMalware">
+                        Malware
+                    </button>
+                </h2>
+                <div id="collapseMalware" class="accordion-collapse collapse" aria-labelledby="headingMalware" data-bs-parent="#casosRealesAccordion">
+                    <div class="accordion-body">
+                        <strong>Ejemplo:</strong> El troyano Zeus infectó millones de computadoras entre 2007 y 2010, robando datos bancarios y credenciales de usuarios en todo el mundo.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingDDoS">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDDoS" aria-expanded="false" aria-controls="collapseDDoS">
+                        Ataques DDoS
+                    </button>
+                </h2>
+                <div id="collapseDDoS" class="accordion-collapse collapse" aria-labelledby="headingDDoS" data-bs-parent="#casosRealesAccordion">
+                    <div class="accordion-body">
+                        <strong>Ejemplo:</strong> En 2016, un ataque DDoS masivo contra Dyn tumbó servicios como Twitter, Netflix y Spotify, afectando a millones de usuarios.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="script.js"></script>

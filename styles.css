@@ -9,6 +9,12 @@ body {
   background-color: var(--color-fondo);
   color: var(--color-texto);
   font-family: 'Montserrat', 'Roboto', 'Libertinus Mono', monospace, sans-serif !important;
+background: #0a192f;
+background: linear-gradient(186deg,#0a192f 20%, #7f00ff 80%);
+background: -webkit-linear-gradient(186deg,#0a192f 20%, #7f00ff 80%);
+background: -moz-linear-gradient(186deg,#0a192f 20%, #7f00ff 80%);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .navbar, .navbar-nav .nav-link {
@@ -47,4 +53,54 @@ a {
 
 a:hover {
   color: var(--color-hover);
+}
+
+.card.custom-card {
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  border: 2px solid var(--color-boton);
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+.card.custom-card .card-title {
+  color: var(--color-boton);
+  font-weight: 700;
+}
+.card.custom-card .card-text {
+  color: var(--color-texto);
+}
+.card.custom-card:hover {
+  box-shadow: 0 0 20px var(--color-hover);
+  border-color: var(--color-hover);
+}
+
+h1, .hero-section h1, .hero-section p {
+  color: var(--color-texto) !important;
+}
+
+.accordion-item {
+  background-color: var(--color-fondo);
+  border: 2px solid var(--color-boton);
+}
+.accordion-button {
+  background-color: var(--color-fondo);
+  color: var(--color-boton);
+  font-weight: 700;
+  border: none;
+  box-shadow: none;
+  transition: background 0.3s, color 0.3s;
+}
+.accordion-button.collapsed {
+  background-color: var(--color-fondo);
+  color: var(--color-boton);
+}
+.accordion-button:not(.collapsed) {
+  background-color: var(--color-hover);
+  color: var(--color-texto);
+}
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.2rem var(--color-hover);
+}
+.accordion-body {
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
 }
