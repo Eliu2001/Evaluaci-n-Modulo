@@ -8,7 +8,7 @@
 body {
   background-color: var(--color-fondo);
   color: var(--color-texto);
-  font-family: 'Share Tech Mono', monospace;
+  font-family: 'Montserrat', 'Roboto', 'Libertinus Mono', monospace, sans-serif !important;
 }
 
 .navbar, .navbar-nav .nav-link {
