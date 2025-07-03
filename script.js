@@ -1,4 +1,3 @@
-
 // Validación del formulario de contacto
 $(document).ready(function() {
   $('#contactForm').on('submit', function(e) {
@@ -39,5 +38,18 @@ $(document).ready(function() {
       feedback = '<span style="color:#7F00FF">Te recomendamos repasar las buenas prácticas de seguridad.</span>';
     }
     $('#testFeedback').html(feedback);
+  });
+});
+
+// Scroll suave al formulario de contacto
+$(document).ready(function() {
+  $("a[href='#contact']").on('click', function(e) {
+    e.preventDefault();
+    const target = $('#contact');
+    if (target.length) {
+      $('html, body').animate({
+        scrollTop: target.offset().top - 60
+      }, 700);
+    }
   });
 });
