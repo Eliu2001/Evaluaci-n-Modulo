@@ -4,7 +4,9 @@
   --color-boton: #64FFDA;
   --color-hover: #7F00FF;
 }
-
+*{
+    color: var(--color-texto);
+}
 body {
   background-color: var(--color-fondo);
   color: var(--color-texto);
